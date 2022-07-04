@@ -1,7 +1,7 @@
 console.log("Memoized Function......");
 
 function memoize(func) {
-  // cache
+  // cache here
   let cache = {};
   // Closure used 
   return function (...args) {
