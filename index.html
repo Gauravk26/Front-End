@@ -1,19 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <style>
+    #GrandParent{
+      height: 400px;
+      width: 400px;
+      border: 1px solid black;
+      padding: 2%;
+    }
+    #Parent{
+      height: 300px;
+      width: 300px;
+      border: 1px solid black;
+      margin: auto;
+      padding: 2%;
+    }
+    #Child{
+      height: 200px;
+      width: 200px;
+      border: 1px solid black;
+      margin-top: 20px;
+      margin: auto;
+    }
+  </style>
 </head>
 </head>
   <body>
+
+
+<div id="GrandParent">
+  <div id="Parent">
+    <div id="Child">
+
+    </div>
+  </div>
+</div>
+
+    <script src="./EventBubbling_Capturing.js"></script>
     <script src="./renderBlocking.js"></script>
     <script src="./PolyfillForMap.js"></script>
-    <script src="./MemoizesFunction.js"></script>
+    <!-- <script src="./MemoizesFunction.js"></script> -->
     <script src="./MemoizesFunction_Fibonacci.js"></script>
     <script src="./MemoizesFunction_Factorial.js"></script>
     <script src="bluetooth.js"></script>
     <script src="debounce.js"></script>
     <script src="throtlling.js"></script>
     <script src="currying.js"></script>
-    <button onclick="startBlutooth()"> Start Bluetooth</button>
+    <script src="PollyfillForBind.js"></script>
+    <script src="./spliceSlice.js"></script>
+  <button onclick="startBlutooth()"> Start Bluetooth</button>
   <button onclick="debounceFunction()"> Say Debounce</button>
   <button onclick="ThrottleFunction()"> Say Throtlling</button>
   </body>
