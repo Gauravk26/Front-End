@@ -10,4 +10,4 @@ function MissingNumber(arr,N) {
   return result;
 }
 
-console.log(MissingNumber([1, 2, 4, 5, 6, 7, 8, 9, 10],10));
+console.log("MissingNumber",MissingNumber([1, 2, 4, 5, 6, 7, 8, 9, 10],10));

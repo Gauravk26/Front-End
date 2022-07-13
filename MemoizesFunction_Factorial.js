@@ -25,6 +25,6 @@ const factorial = memoize((x) => {
   }
 });
 
-console.log(factorial(6));
-console.log(factorial(7));
+console.log("factorial",factorial(6));
+console.log("factorial",factorial(7));
 
