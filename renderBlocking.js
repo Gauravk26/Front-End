@@ -1,3 +1,8 @@
-// for(var i = 0;i<10000;i++){
-//     console.log(1)
-// }  
+// a()
+// function a(v1){
+//   console.log("jjj")
+// }
+
+// function a(v1){
+//  console.log("jjj")
+// }
