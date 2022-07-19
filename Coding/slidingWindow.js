@@ -1,3 +1,5 @@
+//find the max_sum of 3 consecutive numbers
+
 var arr = [1, 2, 4, 3, 7, 1];
 function MaxSumWindow(arr, window) {
   let max_sum = 0;

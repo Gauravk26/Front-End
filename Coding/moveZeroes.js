@@ -1,6 +1,7 @@
 // i/p-> [1,0,2,3,0,5,0]
 // o/p-> [1,2,3,5,0,0,0]
 
+//Move all the zeros at the end
 var arr = [1,0,2,3,0,5,0]
 function moveZeroes(newArr){
     let count = 0;
