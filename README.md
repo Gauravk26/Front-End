@@ -10,6 +10,7 @@
     Memoization
     Closures
     Hoisitng
+    Prototypes
     
    
 # Algorithms Questions
