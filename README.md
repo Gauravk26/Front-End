@@ -9,7 +9,7 @@
     Event Delegation
     Memoization
    
-# Algorithms 
+# Algorithms Questions
   Missing Number <br>
   Duplicate Number <br>
   Move Zeroes at the end <br>
