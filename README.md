@@ -8,6 +8,9 @@
     Polyfill for Reduce 
     Event Delegation
     Memoization
+    Closures
+    Hoisitng
+    
    
 # Algorithms Questions
   Missing Number <br>
