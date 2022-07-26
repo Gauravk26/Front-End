@@ -1,4 +1,4 @@
-var arrayToTest = [2,3,4,5]
+let arrayToTest = [2,3,4,5]
 
 arrayToTest.push(99,2);
 

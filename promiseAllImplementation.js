@@ -1,36 +1,21 @@
-var promise1 = new Promise((resolve, reject) => {
-  resolve(1);
-});
-var promise2 = new Promise((resolve, reject) => {
-  resolve(2);
-});
-var promise3 = new Promise((resolve, reject) => {
-  reject(3)
-});
-
-var promise4 = new Promise((resolve, reject) => {
-  resolve(4);
-});
-
-// Promise.all([promise1, promise2, promise3, promise4])
-//   .then((result) => {
-//     console.log("Promise real", result);
-//   })
-//   .catch((err) => console.log("Error", err));
+let promise1 = Promise.resolve(1)
+let promise2 = Promise.resolve(2)
+let promise3 = Promise.reject(3)
+let promise4 = Promise.resolve(4)
 
 //Promise all Implementation
 
 Promise.prototype.allNew = function (PromiseArray) {
-  var resultArray = [];
-  var promiseAll = new Promise((resolve, reject) => {
-    var promiseFlag = false;
-    var failed ;
+   const resultArray = [];
+   return new Promise((resolve, reject) => {
+    let promiseFlag = false;
+    let failed ;
     PromiseArray.map(async (iter, index) => {
       await iter
         .then((res) => {
           resultArray.push(res);
         })
-        .catch((err) => {
+        .catch(() => {
           promiseFlag = true;
           failed = index
         });
@@ -41,7 +26,6 @@ Promise.prototype.allNew = function (PromiseArray) {
         }
     });
   });
-  return promiseAll;
 };
 
 Promise.prototype
@@ -49,4 +33,4 @@ Promise.prototype
   .then((result) => {
     console.log("Promise Implementation", result);
   })
-  .catch((err) => console.log("Error", err));
+  .catch((err) => console.log("Error in", err));
