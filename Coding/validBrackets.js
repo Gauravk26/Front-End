@@ -1,23 +1,19 @@
-const str = "{}";
+const strInput = "{}";
 function isValidString(str) {
   const map = new Map();
   map.set("{", "}");
   const arr = [];
-  for (let i = 0; i < str.length; i++) {
-    if (map.has(str[i])) {
-      arr.push(str[i]);
+  for (const element of str) {
+    if (map.has(element)) {
+      arr.push(element);
     } else {
       let pop = arr.pop();
-      if (map.get(pop) !== str[i]) {
+      if (map.get(pop) !== element) {
         return false;
       }
     }
   }
-  if (arr.length === 0) {
-    return true;
-  } else {
-    return false;
-  }
+  return arr.length === 0;
 }
 console.log("isValidString", isValidString("{"));
 console.log("isValidString", isValidString("{{"));

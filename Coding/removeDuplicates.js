@@ -1,7 +1,7 @@
 function removeDuplicate(arr) {
-  var newMap = new Map();
-  var newArray = [...arr];
-  for (var i = 0; i < newArray.length; i++) {
+  let newMap = new Map();
+  let newArray = [...arr];
+  for (let i = 0; i < newArray.length; i++) {
     if (newMap.has(arr[i])) {
       arr.splice(i, 1);
     } else {

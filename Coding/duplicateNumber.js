@@ -1,14 +1,14 @@
 //Duplicate Number
 
-var arrayDuplicate = [1, 2, 3, 4, 5, 55, 5];
+const arrayDuplicate = [1, 2, 3, 4, 5, 55, 5];
 
 function findDuplicateNumber(arr) {
-  var newMap = new Map();
-  for (var i = 0; i < arr.length; i++) {
-    if (newMap.has(arr[i])) {
-      return arr[i];
+  let newMap = new Map();
+  for (const element of arr) {
+    if (newMap.has(element)) {
+      return element;
     } else {
-      newMap.set(arr[i]);
+      newMap.set(element);
     }
   }
 }
@@ -17,13 +17,13 @@ console.log("Duplicate",findDuplicateNumber([1, 2, 1, 3, 4, 5, 55, 5]));
 
 //Multiple Duplicates
 function findMultipleDuplicateNumber(arr) {
-    var newMap = new Map();
-    var result= []
-    for (var i = 0; i < arr.length; i++) {
-      if (newMap.has(arr[i])) {
-        result.push(arr[i])
+    let newMap = new Map();
+    let result= []
+    for (const element of arr) {
+      if (newMap.has(element)) {
+        result.push(element)
       } else {
-        newMap.set(arr[i]);
+        newMap.set(element);
       }
     }
     return result;

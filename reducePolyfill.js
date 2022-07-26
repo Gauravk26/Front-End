@@ -12,7 +12,7 @@ const sumWithInitial = array1.reduce(
 
 Array.prototype.reduceBeta = function (func, defaultValue) {
   let acc = defaultValue ? this[0] + defaultValue : 0;
-  for (var i = 0; i < this.length - 1; i++) {
+  for (let i = 0; i < this.length - 1; i++) {
     acc = acc ? acc : this[0];
     acc = func(acc, this[i + 1]);
   }
@@ -25,5 +25,3 @@ console.log(
     10
   )
 );
-
-fsq3dUKaaVBGte7//u//XK/gcVUFYg+go3OBO03xYViJ0bY=

@@ -2,7 +2,7 @@ function sum(a, b, c) {
   return a + b + c;
 }
 
-var curryMaker = curry(sum);
+let curryMaker = curry(sum);
 
 function curry(func) {
   return function curried(...args) {
