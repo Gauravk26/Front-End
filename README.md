@@ -9,7 +9,7 @@
     Event Delegation
     Memoization
     Closures
-    Hoisitng
+    Hoisting
     Prototypes
     
    
