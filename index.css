@@ -1,0 +1,83 @@
+body{
+    background-color:#E0D8C3;
+    margin: 0;
+  }
+  .navigationBar{
+    margin-top:10px;
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    align-content:center;
+  }
+  .item{
+   height: 5rem;
+   width:7rem;
+   border-radius: 10%;
+   box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+   background-color: deepskyblue;
+   text-align: center;
+   color:#fff;
+   cursor: pointer;
+  }
+  p {
+    font-size: larger;
+    font-weight: 900;
+    margin-top:25%;
+   font-family: "Lucida Console", "Courier New", monospace;
+  }
+  .item:hover {
+animation: shake 0.5s;
+animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+0% { transform: translate(1px, 1px) rotate(0deg); }
+10% { transform: translate(-1px, -2px) rotate(-1deg); }
+20% { transform: translate(-3px, 0px) rotate(1deg); }
+30% { transform: translate(3px, 2px) rotate(0deg); }
+40% { transform: translate(1px, -1px) rotate(1deg); }
+50% { transform: translate(-1px, 2px) rotate(-1deg); }
+60% { transform: translate(-3px, 1px) rotate(0deg); }
+70% { transform: translate(3px, 1px) rotate(-1deg); }
+80% { transform: translate(-1px, -1px) rotate(1deg); }
+90% { transform: translate(1px, 2px) rotate(0deg); }
+100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+  @media screen  and (max-width: 600px) {
+    .navigationBar {
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    align-content:center;
+    flex-direction: column;
+    }
+    .item{
+     margin:10px;
+  }
+}
+.Content{
+   margin:auto 0px auto 0px;
+}
+#GrandParent{
+    height: 400px;
+    width: 400px;
+    border: 3px solid orange;
+    padding: 2%;
+  }
+  #Parent{
+    height: 300px;
+    width: 300px;
+    border: 2px solid blue;
+    margin: 20px;
+    padding: 2%;
+  }
+  #Child{
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    margin-top:40px;
+    margin-left:40px;
+  }
+  .Content{
+    margin-top:30px;
+  }
