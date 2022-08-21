@@ -1,16 +1,16 @@
 //find the max_sum of 3 consecutive numbers
 
-let arr = [1, 2, 4, 3, 7, 1];
-function MaxSumWindow(arr, window) {
+let item_arr = [1, 2, 3, 4, 5];
+function MaxSumWindow(items, window) {
   let max_sum = 0;
   let p = 0,
     j = window;
   for (let i = 0; i < window; i++) {
-    max_sum = max_sum + arr[i];
+    max_sum = max_sum + items[i];
   }
 
-  for (let i = 1; i < arr.length - (window - 1); i++) {
-    let sum = max_sum - arr[p] + arr[j];
+  for (let i = 1; i < items.length - (window - 1); i++) {
+    let sum = max_sum - items[p] + items[j];
     if (sum > max_sum) {
       max_sum = sum;
     }
@@ -20,4 +20,4 @@ function MaxSumWindow(arr, window) {
   return max_sum;
 }
 
-console.log(MaxSumWindow(arr, 4));
+console.log("MaxSumWindow", MaxSumWindow(item_arr, 4));

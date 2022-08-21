@@ -5,7 +5,6 @@ function memoize(func) {
   let cache = {};
   // Closure used 
   return function (...args) {
-    console.log("Arguments...",args)
     let n = args[0];
     if (n in cache) {
       console.log("Returning from cached value...");
