@@ -17,8 +17,8 @@
    
 # Algorithms Questions
   Find the Missing Number <br>
-  Finf the Duplicate Number <br>
+  Find the Duplicate Number <br>
   Move Zeroes at the end <br>
-  Find pair with a given sum k<br>
+  Find pair with a given sum K<br>
   Remove Duplicates <br>
   Valid Brackets <br>
