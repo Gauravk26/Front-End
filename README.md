@@ -6,11 +6,13 @@
     Implement Polyfill for Bind.
     Implement Polyfill for Map.
     Implement Polyfill for Reduce. 
+    How to flatten Array
     What is Event Delegation.
     How to achieve Memoization.
     What is Closures.
     What is Hoisting.
     What are Prototypes.
+    
     
    
 # Algorithms Questions
