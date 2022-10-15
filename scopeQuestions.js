@@ -1,4 +1,4 @@
-//What will be output 
+// What will be output 
 function x(){
    setTimeout(function(){
      console.log("Global",p)

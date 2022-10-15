@@ -10,4 +10,4 @@ function debounce(func,timeout){
 function SayDebounce(){
     console.log("SayDebounce")
 }
- const debounceFunction = debounce(SayDebounce,2000);
+const debounceFunction = debounce(SayDebounce,2000);

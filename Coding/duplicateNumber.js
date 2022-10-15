@@ -15,7 +15,7 @@ function findDuplicateNumber(arr) {
 
 console.log("Duplicate",findDuplicateNumber([1, 2, 1, 3, 4, 5, 55, 5]));
 
-//Multiple Duplicates
+//Multiple Duplicates.....
 function findMultipleDuplicateNumber(arr) {
     let newMap = new Map();
     let result= []

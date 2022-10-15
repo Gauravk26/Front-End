@@ -1,5 +1,5 @@
 body{
-    background-color:#E0D8C3;
+    background-color:#1E1F21;
     margin: 0;
   }
   .navigationBar{
@@ -14,7 +14,7 @@ body{
    width:7rem;
    border-radius: 10%;
    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
-   background-color: deepskyblue;
+   background-color: #DB0042;
    text-align: center;
    color:#fff;
    cursor: pointer;
@@ -81,3 +81,16 @@ animation-iteration-count: infinite;
   /* .Content{
     margin-top:30px;
   } */
+
+  .contentBody{
+   
+  }
+  .contentBody1{
+    color: white;
+    background: red;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }

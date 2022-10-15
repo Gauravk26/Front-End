@@ -5,6 +5,6 @@ console.log(arrayExample)
 
 
 let arrayExample1 = [2,6,7,8,9,7,6];
-console.log("slice",arrayExample1.slice(1,4));
+console.log("Slice",arrayExample1.slice(1,4));
 //slice does not change the original array
 console.log(arrayExample1);

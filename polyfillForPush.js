@@ -14,4 +14,4 @@ let length = this.length;
   })
 }
 arrayToTest.push1(999,22,33);
-console.log("PolyfillArray",arrayToTest)
+console.log("PolyfillArray",arrayToTest);
