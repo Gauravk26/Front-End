@@ -5,28 +5,32 @@ let promise4 = Promise.resolve(4)
 
 //Promise all Implementation
 
-Promise.prototype.allNew = function (PromiseArray) {
-   const resultArray = [];
-   return new Promise((resolve, reject) => {
-    let promiseFlag = false;
-    let failed ;
-    PromiseArray.map(async (iter, index) => {
-      await iter
-        .then((res) => {
-          resultArray.push(res);
-        })
-        .catch(() => {
-          promiseFlag = true;
-          failed = index
-        });
-        if(promiseFlag){
-          reject(failed)
-        } else {
-          resolve(resultArray)
+Promise.prototype.allNew = function promiseAll(iterable) {
+  return new Promise((resolve, reject) => {
+    const results = new Array(iterable.length);
+    let unresolved = iterable.length;
+
+    if (unresolved === 0) {
+      resolve(results);
+      return;
+    }
+
+    iterable.forEach(async (item, index) => {
+      try {
+        const value = await item;
+        results[index] = value;
+        unresolved -= 1;
+
+        if (unresolved === 0) {
+          resolve(results);
         }
+      } catch (err) {
+        reject(err);
+      }
     });
   });
-};
+}
+
 
 Promise.prototype
   .allNew([promise1, promise2, promise3, promise4])
